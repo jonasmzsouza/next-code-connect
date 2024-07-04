@@ -3,16 +3,18 @@ import { Avatar } from "../Avatar";
 import styles from "./cardpost.module.css";
 import Link from "next/link";
 
-export const CardPost = ({ post }) => {
+export const CardPost = ({ post, highlight }) => {
   return (
     <Link href={`/posts/${post.slug}`} className={styles.link}>
-      <article className={styles.card}>
+      <article
+        className={styles.card}
+        
+      >
         <header className={styles.header}>
           <figure>
             <Image
               src={post.cover}
-              width={438}
-              height={133}
+              fill
               alt={`Capa do post de título: ${post.title}`}
             />
           </figure>

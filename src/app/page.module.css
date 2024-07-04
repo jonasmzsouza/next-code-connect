@@ -1,8 +1,7 @@
 .grid {
   display: flex;
-  gap: 24px;
+  gap: 1.5em;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .links {

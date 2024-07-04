@@ -1,10 +1,11 @@
 .link {
   text-decoration: none;
   cursor: pointer;
+  width: calc(50% - 1.5em);
 }
 
 .card {
-  width: 486px;
+  width: 100%;
   border-radius: 8px;
   background: #171d1f;
 }
@@ -17,10 +18,17 @@
 
 .header figure {
   margin: 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 31.75%;
+  overflow: hidden;
 }
 
-.header figure img {
-  max-width: 100%;
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 .body {
@@ -50,4 +58,10 @@
 
 .footer {
   padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .link {
+    width: calc(100% - 1.5em);
+  }
 }
